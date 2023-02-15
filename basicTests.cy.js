@@ -12,6 +12,7 @@ beforeEach(() => {
 
 describe("Basic scripts", () => {
 
+    //Checkboxes test
     it("Check", () => {
        
         cy.get('[href="/checkboxes"]').click();
@@ -24,6 +25,7 @@ describe("Basic scripts", () => {
              })
         })
     })
+    //Dynamic loading test
     it("loading", () => {
         cy.get('[href="/dynamic_loading"]').click();
         cy.get('[href="/dynamic_loading/1"]').click();
@@ -33,6 +35,7 @@ describe("Basic scripts", () => {
            .should('be.visible')
                
     })
+    //User login tes
     it("Login", () => {
         cy.get('[href="/login"]').click();
         cy.get('[id="username"]').type("ffsdfsdf", { delay:50} );
