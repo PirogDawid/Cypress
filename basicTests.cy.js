@@ -35,7 +35,7 @@ describe("Basic scripts", () => {
            .should('be.visible')
                
     })
-    //User login tes
+    //User login test
     it("Login", () => {
         cy.get('[href="/login"]').click();
         cy.get('[id="username"]').type("ffsdfsdf", { delay:50} );
